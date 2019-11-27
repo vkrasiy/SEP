@@ -36,4 +36,27 @@ public class ChangeServiceImpl implements ChangeService {
         }
         return Collections.emptyList();
     }
+
+    public ChangeDTO get(Long id) {
+        //работа с базой
+        //parse в DTO
+        return changeDTO;
+    }
+
+    public void save(ChangeDTO changeDTO) {
+        //parse из DTO
+        if (changeDTO instanceof RepeatableChangeEntity)
+        //добавление в базу
+    }
+
+    public void update(ChangeDTO changeDTO) {
+        //найти по id
+        //изменить поля на новые
+    }
+
+    public boolean delete(Long id) {
+        //найти в базе
+        //удалить
+        return true;
+    }
 }
